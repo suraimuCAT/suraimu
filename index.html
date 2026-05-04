@@ -77,5 +77,22 @@
 <div id="inu">
 <p>東方プロジェクトの二次創作です。 何か増やしてほしいものやダメなところがあったらチャット広場(<a href="https://suraimumy.1my.jp/">ここをクリック)</a>にお願いします</p>
 </div>
+<input type="text" id="answerField">
+    <button onclick="judge()">決定</button>
+
+   <script>
+    function judge() {
+        // 入力された文字を取得
+        let userText = document.getElementById("answerField").value;
+
+        // もし「オープンセサミ」だったらリンクへ移動
+        if (userText == "スライム") {
+            window.location.href = "https://suraimu.my.canva.site/dahiqh0j3l8"; 
+        } else {
+            alert("合言葉が違います！今は「" + userText + "」と入力されています。");
+        }
+    }
+</script>
+
 </body>
 </html>
